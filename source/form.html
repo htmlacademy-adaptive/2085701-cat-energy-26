@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="" width="34px" height="38px" alt="Логотип CAT ENERGY.">
+    </a>
+    <a href="index.html">
+      <img src="" width="101px" height="18px" alt="Бренд CAT ENERGY.">
+    </a>
+    <nav>
+      <button type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li>
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Подбор программы</h1>
+    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form method="post" action="https://echo.htmlacademy.ru/">
+      <fieldset>
+        <legend class="visually-hidden">Данные кота</legend>
+        <label for="cat-name">ИМЯ:*</label>
+        <input type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
+        <label for="cat-weight">Вес (кг):*</label>
+        <input type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+        <label for="cat-age">Возраст (лет):</label>
+        <input type="number" name="cat-age" id="cat-age" placeholder="7">
+      </fieldset>
+      <fieldset>
+        <legend class="visually-hidden">Цель</legend>
+        <ul>
+          <li>
+            <label>
+              <input class="visually-hidden" type="radio" name="weight-change" value="weight-less">
+              <span></span>
+              <span>Похудение</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="visually-hidden" type="radio" name="weight-change" value="weight-gain">
+              <span></span>
+              <span>Набор массы</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="visually-hidden" type="radio" name="weight-change" value="weight-unknown">
+              <span></span>
+              <span>Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные (владельца кота)</legend>
+        <label for="master-email">E-mail:*</label>
+        <input type="email" name="master-email" id="master-email" placeholder="kuklachev@gmail.com" required>
+        <label for="master-phone">Телефон:*</label>
+        <input type="tel" name="master-phone" id="master-phone" placeholder="8 (960) 900-60-90" required>
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea name="comment" rows="9" cols="35"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительно</legend>
+        <ul>
+          <li>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="sweetener" checked>
+              <span></span>
+              <span>Сахарозаменитель</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="drinking-water">
+              <span></span>
+              <span>Питьевая вода</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="milk">
+              <span></span>
+              <span>Молоко</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="visually-hidden" type="checkbox" name="vitamins">
+              <span></span>
+              <span>Витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Отправить заявку</button>
+      <p>* — Обязательные поля</p>
+    </form>
+    <section>
+      <h2 class="visually-hidden">Контакты</h2>
+      <b>Приглашаем к сотрудничеству дилеров!</b>
+      <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </section>
+    <section>
+      <h2>Местоположение по карте</h2>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="index.html">
+        <img src="" width="128px" height="24px" alt="Логотип CAT ENERGY.">
+      </a>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a>
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a>
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a>
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a href="">HTML Academy</a>
+      <a>
+        <img width="27px" height="34px" alt="Логотип HTML-академии.">
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
