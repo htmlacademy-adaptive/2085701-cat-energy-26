@@ -21,13 +21,13 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="header-navigation__list">
-        <li class="header-navigation__item header-navigation__item--current">
+        <li class="header-navigation__item">
           <a class="header-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="header-navigation__item">
           <a class="header-navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="header-navigation__item">
+        <li class="header-navigation__item header-navigation__item--current">
           <a class="header-navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -41,91 +41,91 @@
 
 
     <form class="form" method="post" action="https://echo.htmlacademy.ru/">
-      <fieldset class="form__cat-data cat-data">
+      <fieldset class="form__item">
         <legend class="visually-hidden">Данные кота</legend>
-        <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
-        <input class="cat-data__input" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
-        <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-        <input class="cat-data__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-        <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-        <input class="cat-data__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+        <label class="form__item-label" for="cat-name">ИМЯ:*</label>
+        <input class="form__item-input" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
+        <label class="form__item-label" for="cat-weight">Вес (кг):*</label>
+        <input class="form__item-input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+        <label class="form__item-label" for="cat-age">Возраст (лет):</label>
+        <input class="form__item-input" type="number" name="cat-age" id="cat-age" placeholder="7">
       </fieldset>
 
 
-      <fieldset class="form__purpose purpose">
+      <fieldset class="form__item">
         <legend class="visually-hidden">Цель</legend>
-        <ul class="purpose__list">
-          <li class="purpose__item">
-            <label class="purpose__label">
+        <ul class="form__item-radio">
+          <li class="form__item-radio-button">
+            <label class="form__item-radio-button-label">
               <input class="visually-hidden" type="radio" name="weight-change" value="weight-less">
-              <span class="purpose__label-mark"></span>
-              <span class="purpose__label-text">Похудение</span>
+              <span class="form__item-radio-button-label-mark"></span>
+              <span class="form__item-radio-button-label-text">Похудение</span>
             </label>
           </li>
-          <li class="purpose__item">
-            <label class="purpose__label">
+          <li class="form__item-radio-button">
+            <label class="form__item-radio-button-label">
               <input class="visually-hidden" type="radio" name="weight-change" value="weight-gain">
-              <span class="purpose__label-mark"></span>
-              <span class="purpose__label-text">Набор массы</span>
+              <span class="form__item-radio-button-label-mark"></span>
+              <span class="form__item-radio-button-label-text">Набор массы</span>
             </label>
           </li>
-          <li class="purpose__item">
-            <label class="purpose__label">
+          <li class="form__item-radio-button">
+            <label class="form__item-radio-button-label">
               <input class="visually-hidden" type="radio" name="weight-change" value="weight-unknown">
-              <span class="purpose__label-mark"></span>
-              <span class="purpose__label-text">Не знаю (Нужен ваш совет)</span>
+              <span class="form__item-radio-button-label-mark"></span>
+              <span class="form__item-radio-button-label-text">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
 
 
-      <fieldset class="form__master-data master-data">
-        <legend class="master-data__legend">Контактные данные (владельца кота)</legend>
-        <label class="master-data__label" for="master-email">E-mail:*</label>
-        <input class="master-data__input" type="email" name="master-email" id="master-email"
+      <fieldset class="form__item">
+        <legend class="form__item-legend">Контактные данные (владельца кота)</legend>
+        <label class="form__item-label" for="master-email">E-mail:*</label>
+        <input class="form__item-input" type="email" name="master-email" id="master-email"
           placeholder="kuklachev@gmail.com" required>
-        <label class="master-data__label" for="master-phone">Телефон:*</label>
-        <input class="master-data__input" type="tel" name="master-phone" id="master-phone"
+        <label class="form__item-label" for="master-phone">Телефон:*</label>
+        <input class="form__item-input" type="tel" name="master-phone" id="master-phone"
           placeholder="8 (960) 900-60-90" required>
       </fieldset>
 
 
-      <fieldset class="form__comment comment">
-        <legend class="comment__legend">Комментарий</legend>
-        <textarea class="comment__text" name="comment" rows="9" cols="35"></textarea>
+      <fieldset class="form__item">
+        <legend class="form__item-legend">Комментарий</legend>
+        <textarea class="form__item-text" name="comment" rows="9" cols="35"></textarea>
       </fieldset>
 
 
-      <fieldset class="form__addition addition">
-        <legend class="addition__legend">Дополнительно</legend>
-        <ul class="addition__list">
-          <li class="addition__item">
-            <label class="addition__label">
+      <fieldset class="form__item">
+        <legend class="form__item-legend">Дополнительно</legend>
+        <ul class="form__item-checkbox">
+          <li class="form__item-checkbox-button">
+            <label class="form__item-checkbox-button-label">
               <input class="visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="addition__mark"></span>
-              <span class="addition__name">Сахарозаменитель</span>
+              <span class="form__item-checkbox-button-label-mark"></span>
+              <span class="form__item-checkbox-button-label-text">Сахарозаменитель</span>
             </label>
           </li>
-          <li class="addition__item">
-            <label class="addition__label">
+          <li class="form__item-checkbox-button">
+            <label class="form__item-checkbox-button-label">
               <input class="visually-hidden" type="checkbox" name="drinking-water">
-              <span class="addition__mark"></span>
-              <span class="addition__name">Питьевая вода</span>
+              <span class="form__item-checkbox-button-label-mark"></span>
+              <span class="form__item-checkbox-button-label-text">Питьевая вода</span>
             </label>
           </li>
-          <li class="addition__item">
-            <label class="addition__label">
+          <li class="form__item-checkbox-button">
+            <label class="form__item-checkbox-button-label">
               <input class="visually-hidden" type="checkbox" name="milk">
-              <span class="addition__mark"></span>
-              <span class="addition__name">Молоко</span>
+              <span class="form__item-checkbox-button-label-mark"></span>
+              <span class="form__item-checkbox-button-label-text">Молоко</span>
             </label>
           </li>
-          <li class="addition__item">
-            <label class="addition__label">
+          <li class="form__item-checkbox-button">
+            <label class="form__item-checkbox-button-label">
               <input class="visually-hidden" type="checkbox" name="vitamins">
-              <span class="addition__mark"></span>
-              <span class="addition__name">Витамины</span>
+              <span class="form__item-checkbox-button-label-mark"></span>
+              <span class="form__item-checkbox-button-label-text">Витамины</span>
             </label>
           </li>
         </ul>
