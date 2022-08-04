@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -132,7 +133,7 @@
           <a class="product__button" href="">Заказать</a>
         </li>
         <li class="catalog-basic__item product">
-          <a class="product__button-more" href="">Показать еще 100500 товаров</a>
+          <p class="product__text-show" href="">Показать еще 100500 товаров</p>
           <p class="product__text">На самом деле вкусов гораздо больше!</p>
           <a class="product__button-more" href="">Показать все</a>
         </li>
@@ -145,39 +146,27 @@
       <ul class="catalog-additional__list">
         <li class="catalog-additional__item additional-product">
           <h3 class="additional-product__title">Сахарозаменитель</h3>
-          <dl class="additional-product__description-list">
-            <dt class="visually-hidden">Объем</dt>
-            <dd class="additional-product__description-list-data">1 упаковка (100 г)</dd>
-            <dt class="visually-hidden">Цена</dt>
-            <dd class="additional-product__description-list-data">200 Р.</dd>
-          </dl>
+          <div class="additional-product__data">1 упаковка (100 г)</div>
+          <div class="additional-product__data">200 Р.</div>
+          <a class="additional-product__button" href="">Заказать</a>
         </li>
         <li class="catalog-additional__item additional-product">
           <h3 class="additional-product__title">Питьевая вода</h3>
-          <dl class="additional-product__description-list">
-            <dt class="visually-hidden">Объем</dt>
-            <dd class="additional-product__description-list-data">5 литров</dd>
-            <dt class="visually-hidden">Цена</dt>
-            <dd class="additional-product__description-list-data">50 Р.</dd>
-          </dl>
+          <div class="additional-product__data">5 литров</div>
+          <div class="additional-product__data">50 Р.</div>
+          <a class="additional-product__button" href="">Заказать</a>
         </li>
         <li class="catalog-additional__item additional-product">
           <h3 class="additional-product__title">Молоко</h3>
-          <dl class="additional-product__description-list">
-            <dt class="visually-hidden">Объем</dt>
-            <dd class="additional-product__description-list-data">1 литр</dd>
-            <dt class="visually-hidden">Цена</dt>
-            <dd class="additional-product__description-list-data">100 Р.</dd>
-          </dl>
+          <div class="additional-product__data">1 литр</div>
+          <div class="additional-product__data">100 Р.</div>
+          <a class="additional-product__button" href="">Заказать</a>
         </li>
         <li class="catalog-additional__item additional-product">
           <h3 class="additional-product__title">Витамины</h3>
-          <dl class="additional-product__description-list">
-            <dt class="visually-hidden">Объем</dt>
-            <dd class="additional-product__description-list-data">1 упаковка (30 г)</dd>
-            <dt class="visually-hidden">Цена</dt>
-            <dd class="additional-product__description-list-data">300 Р.</dd>
-          </dl>
+          <div class="additional-product__data">1 упаковка (30 г)</div>
+          <div class="additional-product__data">300 Р.</div>
+          <a class="additional-product__button" href="">Заказать</a>
         </li>
       </ul>
     </section>
@@ -217,16 +206,19 @@
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -36,14 +37,14 @@
 
 
   <main class="main-container">
-    <h1 class="main-title">Подбор программы</h1>
+    <h1 class="main-form-title">Подбор программы</h1>
     <p class="form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
 
     <form class="form" method="post" action="https://echo.htmlacademy.ru/">
       <fieldset class="form__item">
         <legend class="visually-hidden">Данные кота</legend>
-        <label class="form__item-label" for="cat-name">ИМЯ:*</label>
+        <label class="form__item-label" for="cat-name">Имя:*</label>
         <input class="form__item-input" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК" required>
         <label class="form__item-label" for="cat-weight">Вес (кг):*</label>
         <input class="form__item-input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
@@ -93,7 +94,7 @@
 
       <fieldset class="form__item">
         <legend class="form__item-legend">Комментарий</legend>
-        <textarea class="form__item-text" name="comment" rows="9" cols="35"></textarea>
+        <textarea class="form__item-input" name="comment" rows="9" cols="35" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
 
@@ -165,16 +166,19 @@
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link">
             <svg class="socials__icon"></svg>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
