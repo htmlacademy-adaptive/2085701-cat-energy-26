@@ -48,12 +48,18 @@
       <form class="form" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="form__item">
           <legend class="visually-hidden">Данные кота</legend>
-          <label class="form__item-label" for="cat-name">Имя:*</label>
-          <input class="form__item-input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
-          <label class="form__item-label" for="cat-weight">Вес (кг):*</label>
-          <input class="form__item-input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-          <label class="form__item-label" for="cat-age">Возраст (лет):</label>
-          <input class="form__item-input" type="number" name="cat-age" id="cat-age" placeholder="7">
+          <div class="form__item-container">
+            <label class="form__item-label" for="cat-name">Имя:*</label>
+            <input class="form__item-input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
+          </div>
+          <div class="form__item-container">
+            <label class="form__item-label" for="cat-weight">Вес (кг):*</label>
+            <input class="form__item-input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+          </div>
+          <div class="form__item-container">
+            <label class="form__item-label" for="cat-age">Возраст (лет):</label>
+            <input class="form__item-input" type="number" name="cat-age" id="cat-age" placeholder="7">
+          </div>
         </fieldset>
 
 
@@ -86,25 +92,29 @@
 
 
         <fieldset class="form__item">
-          <legend class="form__item-legend">Контактные данные (владельца кота)</legend>
-          <label class="form__item-label" for="master-email">E-mail:*</label>
-          <input class="form__item-input" type="email" name="master-email" id="master-email"
-            placeholder="kuklachev@gmail.com" required>
-          <label class="form__item-label" for="master-phone">Телефон:*</label>
-          <input class="form__item-input" type="tel" name="master-phone" id="master-phone"
-            placeholder="8 (960) 900-60-90" required>
+          <p class="form__item-legend">Контактные данные (владельца кота)</p>
+          <div class="form__item-container">
+            <label class="form__item-label" for="master-email">E-mail:*</label>
+            <input class="form__item-input" type="email" name="master-email" id="master-email"
+              placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form__item-container">
+            <label class="form__item-label" for="master-phone">Телефон:*</label>
+            <input class="form__item-input" type="tel" name="master-phone" id="master-phone"
+              placeholder="8 (960) 900-60-90" required>
+          </div>
         </fieldset>
 
 
         <fieldset class="form__item">
-          <legend class="form__item-legend">Комментарий</legend>
+          <p class="form__item-legend">Комментарий</p>
           <textarea class="form__item-input" name="comment" rows="9" cols="35"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
 
         <fieldset class="form__item">
-          <legend class="form__item-legend">Дополнительно</legend>
+          <p class="form__item-legend">Дополнительно</p>
           <ul class="form__item-checkbox">
             <li class="form__item-checkbox-button">
               <label class="form__item-checkbox-button-label">

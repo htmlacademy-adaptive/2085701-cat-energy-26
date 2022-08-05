@@ -2,19 +2,45 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
-.page__body {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.page .page__body {
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   box-sizing: border-box;
   color: #000000;
   background-color: #ffffff;
@@ -60,7 +86,6 @@
 }
 .promo .promo__description {
   display: block;
-  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
@@ -97,14 +122,14 @@
   margin-bottom: 29px;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
 }
 .programs .programs__item-description {
   font-family: "Arial", sans-serif;
   color: #444444;
   margin-top: 0;
   margin-bottom: 38px;
-  font-size: 14px;
-  line-height: 18px;
 }
 .programs .programs__item-link {
   font-size: 16px;
@@ -125,8 +150,6 @@
 }
 .instruction .instruction__list {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   color: #444444;
   list-style-type: none;
   margin: 0;
@@ -152,8 +175,6 @@
 }
 .example .example__description {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   color: #444444;
   margin-bottom: 20px;
 }
@@ -170,13 +191,12 @@
 .example .example__parameters {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
   color: #444444;
 }
 .example .example__price {
   margin: 0;
   margin-bottom: 40px;
-  font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -206,7 +226,6 @@
 .contacts .contacts__address {
   font-family: "Arial", sans-serif;
   color: #444444;
-  font-size: 14px;
   line-height: 20px;
 }
 .page-footer {
@@ -223,6 +242,13 @@
 .page-footer .page-footer__logo-academy {
   padding-top: 28px;
   padding-bottom: 32px;
+}
+.page-footer .page-footer__logo-academy-link {
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
 .socials {
   padding: 20px;
@@ -268,10 +294,9 @@
 .product .product__title {
   margin: 0;
   font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: #222222;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   font-weight: 400;
 }
 .product .product__description-list {
@@ -345,7 +370,6 @@
 }
 .additional-product .additional-product__data {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
   line-height: 14px;
   color: #444444;
   margin-bottom: 15px;
@@ -376,14 +400,12 @@
 }
 .form-description {
   margin: 0;
-  margin-bottom: 12px;
-  font-size: 14px;
-  line-height: 18px;
+  margin-bottom: 14px;
   text-transform: uppercase;
 }
 .form .form__item {
   margin: 0;
-  padding: 27px 0 24px;
+  padding: 25px 0 23px;
   border: none;
 }
 .form .form__item:last-of-type {
@@ -391,10 +413,14 @@
   margin-bottom: 34px;
 }
 .form .form__item-legend {
+  margin: 0;
   padding: 0;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
+}
+.form .form__item-container {
+  margin-bottom: 14px;
 }
 .form .form__item-label {
   font-size: 16px;
@@ -449,18 +475,9 @@
   padding: 7px 44px;
 }
 .form .form__text {
+  display: block;
   font-size: 14px;
   line-height: 16px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .contacts-background {
   background-color: #f2f2f2;
@@ -469,17 +486,5 @@
   margin: 0 20px;
   padding-top: 27px;
   padding-bottom: 32px;
-}
-.button {
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #68b738;
-  text-align: center;
-  border: none;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
