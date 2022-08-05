@@ -1,7 +1,7 @@
 .example {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: #eaeaea;
+  background-color: @light-grey;
 
   .example__container {
     margin: 0 20px;
@@ -16,10 +16,8 @@
   }
 
   .example__description {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: #444444;
+    font-family: @addition-font-family;
+    color: @dark-grey;
     margin-bottom: 20px;
   }
 
@@ -36,16 +34,15 @@
   }
 
   .example__parameters {
-    font-family: "Arial", sans-serif;
+    font-family: @addition-font-family;
     font-size: 12px;
-    line-height: 100%;
-    color: #444444;
+    line-height: 12px;
+    color: @dark-grey;
   }
 
   .example__price {
     margin: 0;
     margin-bottom: 40px;
-    font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
   }
