@@ -1,12 +1,24 @@
 .instruction {
   margin: 0 20px 49px;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 69px;
+  }
+
   .instruction__title {
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 32px;
+    }
   }
 
   .instruction__list {
@@ -15,9 +27,25 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: @mobile-width-only) {
+      flex-direction: column;
+    }
   }
 
   .instruction__item {
     margin-left: 20px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 250px;
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
   }
 }
