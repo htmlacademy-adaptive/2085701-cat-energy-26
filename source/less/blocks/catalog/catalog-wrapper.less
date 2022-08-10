@@ -1,4 +1,16 @@
 .catalog-wrapper {
   margin: 0 20px;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
 }

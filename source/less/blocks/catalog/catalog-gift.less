@@ -4,10 +4,21 @@
   padding-bottom: 43px;
   background-color: @background-green;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+
   .catalog-gift__text {
     margin: 0;
     font-size: 16px;
     line-height: 20px;
     color: @white;
+    text-align: center;
   }
 }
