@@ -2,7 +2,45 @@
   padding-top: 10px;
   padding-bottom: 17px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 0;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    margin-bottom: 74px;
+  }
+
   .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 20px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 110px;
+    }
+  }
+
+  .page-header__logo-container {
+    display: flex;
+  }
+
+  .page-header__logo-link {
+    height: 38px;
+
+    @media (min-width: @tablet-width) {
+      height: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 59px;
+    }
   }
 }

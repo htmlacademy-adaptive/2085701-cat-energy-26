@@ -2,6 +2,20 @@
   padding-top: 11px;
   padding-bottom: 14px;
   margin-bottom: 19px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 
   &:nth-last-of-type(2) {
     margin-bottom: 36px;
@@ -11,8 +25,28 @@
     margin-bottom: 0;
   }
 
+  .product__container {
+    @media (min-width: @tablet-width) {
+      width: 252px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 169px;
+    }
+  }
+
   .product__link {
     text-decoration: none;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+    }
+  }
+
+  .product__image {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 34px;
+    }
   }
 
   .product__title {
@@ -22,6 +56,11 @@
     color: @darkest-gray;
     margin-bottom: 20px;
     font-weight: 400;
+    width: 76px;
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+    }
   }
 
   .product__description-list {
@@ -35,18 +74,35 @@
     list-style-type: none;
   }
 
+  .product__description-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .product__description-list-data {
     margin: 0;
   }
 
   .product__button {
-    min-width: 280px;
     text-decoration: none;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 40px;
+    grid-column: 1/3;
 
     &--more {
       color: @dark-grey;
       background-color: @basic-grey;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 168px;
     }
   }
 
@@ -55,6 +111,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: @light-black;
+    margin: 0;
     margin-bottom: 8px;
   }
 
@@ -64,6 +121,7 @@
     font-size: 12px;
     line-height: 16px;
     color: @dark-grey;
+    margin: 0;
     margin-bottom: 21px;
   }
 }

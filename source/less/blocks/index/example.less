@@ -5,6 +5,14 @@
 
   .example__container {
     margin: 0 20px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 110px;
+    }
   }
 
   .example__title {
@@ -15,7 +23,39 @@
     font-weight: 400;
   }
 
+  .example__inner {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .example__wrapper {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column;
+      width: 436px;
+    }
+  }
+
+  .example__results-container {
+    display: flex;
+
+    @media (max-width: @mobile-width-only) {
+      flex-direction: column;
+    }
+
+    @media (min-width: @tablet-width) {
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
   .example__description {
+    margin: 0;
     font-family: @addition-font-family;
     color: @dark-grey;
     margin-bottom: 20px;
@@ -25,11 +65,21 @@
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example__results-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .example__data {
     font-size: 24px;
     line-height: 24px;
+    margin: 0;
     margin-bottom: 7px;
   }
 
@@ -40,16 +90,52 @@
     color: @dark-grey;
   }
 
+  .example__price-container {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
   .example__price {
     margin: 0;
     margin-bottom: 40px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 63px;
+    }
+  }
+
+  .example__photo {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .example__photo-changes {
     display: block;
     margin-bottom: 15px;
+  }
+
+  .example__photo-range-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .example__photo-text {

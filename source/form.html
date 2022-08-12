@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,15 +48,15 @@
       <form class="form" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="form__item">
           <legend class="visually-hidden">Данные кота</legend>
-          <div class="form__item-container">
+          <div class="form__item-wrapper">
             <label class="form__item-label" for="cat-name">Имя:*</label>
             <input class="form__item-input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
           </div>
-          <div class="form__item-container">
+          <div class="form__item-wrapper">
             <label class="form__item-label" for="cat-weight">Вес (кг):*</label>
             <input class="form__item-input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
           </div>
-          <div class="form__item-container">
+          <div class="form__item-wrapper">
             <label class="form__item-label" for="cat-age">Возраст (лет):</label>
             <input class="form__item-input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </div>
@@ -90,29 +91,31 @@
         </fieldset>
 
 
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--full">
           <p class="form__item-legend">Контактные данные (владельца кота)</p>
           <div class="form__item-container">
-            <label class="form__item-label" for="master-email">E-mail:*</label>
-            <input class="form__item-input" type="email" name="master-email" id="master-email"
-              placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="form__item-container">
-            <label class="form__item-label" for="master-phone">Телефон:*</label>
-            <input class="form__item-input" type="tel" name="master-phone" id="master-phone"
-              placeholder="8 (960) 900-60-90" required>
+            <div class="form__item-wrapper">
+              <label class="form__item-label" for="master-email">E-mail:*</label>
+              <input class="form__item-input" type="email" name="master-email" id="master-email"
+                placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__item-wrapper">
+              <label class="form__item-label" for="master-phone">Телефон:*</label>
+              <input class="form__item-input" type="tel" name="master-phone" id="master-phone"
+                placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
 
 
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--full">
           <p class="form__item-legend">Комментарий</p>
           <textarea class="form__item-input" name="comment" rows="9" cols="35"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
 
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--full">
           <p class="form__item-legend">Дополнительно</p>
           <ul class="form__item-checkbox">
             <li class="form__item-checkbox-button">
@@ -147,8 +150,10 @@
         </fieldset>
 
 
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <small class="form__text">* — Обязательные поля</small>
+        <div class="form__button-container">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <small class="form__text">* — Обязательные поля</small>
+        </div>
       </form>
     </div>
 
@@ -156,8 +161,8 @@
     <section class="contacts contacts-background">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контакты</h2>
-        <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <b class="contacts__slogan">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</b>
+        <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
     </section>
 

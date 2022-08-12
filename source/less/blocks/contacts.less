@@ -3,8 +3,15 @@
   padding-bottom: 26px;
   background-color: @white;
 
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    padding: 56px 80px;
+  }
+
   .contacts__container {
     margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .contacts__slogan {
@@ -15,8 +22,13 @@
   }
 
   .contacts__address {
+    margin: 0;
     font-family: @addition-font-family;
     color: @dark-grey;
     line-height: 20px;
+
+    @media (min-width: @tablet-width) {
+      text-align: right;
+    }
   }
 }
