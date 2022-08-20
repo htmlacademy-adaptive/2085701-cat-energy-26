@@ -1,8 +1,15 @@
 .catalog-basic {
   padding-bottom: 25px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 68px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 1/3;
+    grid-row: auto;
+    margin-bottom: 0;
   }
 
   .catalog-basic__list {
