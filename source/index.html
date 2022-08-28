@@ -16,15 +16,13 @@
   <header class="page-header">
     <div class="page-header__box">
       <div class="page-header__container">
-        <div class="page-header__logo-container">
-          <a class="page-header__logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/header-icons/logo-header-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/header-icons/logo-header-tablet.svg">
-              <img src="img/header-icons/logo-name-header.svg" alt="Логотип CAT ENERGY">
-            </picture>
-          </a>
-        </div>
+        <a class="page-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header-icons/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-icons/logo-header-tablet.svg">
+            <img src="img/header-icons/logo-header-mobile.svg" alt="Логотип CAT ENERGY">
+          </picture>
+        </a>
         <nav class="header-navigation header-navigation--closed header-navigation--nojs">
           <button class="header-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -52,13 +50,18 @@
       <div class="promo__box">
         <div class="promo__container">
           <div class="promo__wrapper">
-            <h1 class="promo__title">Функциональное<br>питание для котов</h1>
-            <span class="promo__description">Занялся собой? Займись котом!</span>
+            <div class="promo__text-box">
+              <h1 class="promo__title">Функциональное<br>питание для котов</h1>
+              <span class="promo__description">Занялся собой? Займись котом!</span>
+            </div>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/promo-img/promo-desktop.png 1x, img/promo-img/promo-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/promo-img/promo-tablet.png 1x, img/promo-img/promo-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/promo-img/promo-desktop.png 1x, img/promo-img/promo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/promo-img/promo-tablet.png 1x, img/promo-img/promo-tablet@2x.png 2x">
               <img class="promo__image" src="img/promo-img/promo.png" width="280" height="270"
-                srcset="img/promo-img/promo.png 1x, img/promo-img/promo@2x.png 2x" alt="Самый популярный корм каталога.">
+                srcset="img/promo-img/promo.png 1x, img/promo-img/promo@2x.png 2x"
+                alt="Самый популярный корм каталога.">
             </picture>
           </div>
           <div class="promo__container-button">
