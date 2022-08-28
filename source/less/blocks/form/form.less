@@ -189,18 +189,26 @@
   &--email {
     width: 20px;
     height: 15px;
-    top: 20px;
+    top: 16px;
     right: 21px;
     fill: none;
     stroke: @darkest-gray;
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+    }
   }
 
   &--phone {
-    top: 19px;
+    top: 12px;
     right: 17px;
     width: 20px;
     height: 21px;
     fill: @black;
+
+    @media (min-width: @tablet-width) {
+      top: 18px;
+    }
   }
 }
 
