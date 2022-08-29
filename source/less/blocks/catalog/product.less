@@ -76,9 +76,17 @@
 
 .product__image {
   display: block;
+  .image;
 
   @media (min-width: @tablet-width) {
+    width: 163px;
+    height: 174px;
     margin-bottom: 34px;
+
+    &--size {
+      width: 168px;
+      height: 200px;
+    }
   }
 
   @media (min-width: @desktop-width) {
