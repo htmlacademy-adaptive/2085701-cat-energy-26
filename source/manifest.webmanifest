@@ -1,10 +1,18 @@
 {
-  "icons": [
-    { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "img/favicons/512.png", "type": "image/png", "sizes": "512x512" }
+  "name": "HTML Academy: Кэт энерджи",
+  "short_name": "Cat-energy",
+  "description": "Сайт про спортивное питание для котов",
+  "display": "fullscreen",
+  "icons": [{
+      "src": "img/favicons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
-"name": "HTML Academy: Кэт энерджи",
-"short_name": "Cat-energy",
-"description": "Сайт про спортивное питание для котов",
-"display": "fullscreen"
+  "start_url": "index.html"
 }
