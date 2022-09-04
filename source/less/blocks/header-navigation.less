@@ -2,7 +2,7 @@
   &--closed .header-navigation__toggle::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -4px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -38,7 +38,7 @@
   &--opened .header-navigation__toggle::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 4px;
     left: 0;
     width: 25px;
     height: 2px;
@@ -65,9 +65,13 @@
   }
 }
 
+.header-navigation__toggle-box {
+  position: relative;
+}
+
 .header-navigation__toggle {
   position: absolute;
-  top: 10px;
+  top: -6px;
   right: 0;
   z-index: 2;
   display: block;
@@ -82,8 +86,8 @@
 .header-navigation__list {
   position: absolute;
   top: 55px;
-  left: -100%;
-  right: -100%;
+  left: 0;
+  right: 0;
   min-width: 322px;
   z-index: 10;
   background-color: @white;
@@ -119,7 +123,6 @@
 }
 
 .header-navigation--nojs .header-navigation__list {
-  position: static;
   display: block;
 }
 
@@ -156,9 +159,8 @@
 .header-navigation__link {
   position: relative;
   display: block;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  margin: 0 20px;
+  padding: 22px 20px 24px;
+  margin: 0;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -181,6 +183,8 @@
     font-size: 18px;
     line-height: 24px;
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {

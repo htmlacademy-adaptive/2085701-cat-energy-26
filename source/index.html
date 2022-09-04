@@ -8,8 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -20,13 +20,16 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/header-icons/logo-header-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/header-icons/logo-header-tablet.svg">
-            <img class="page-header__logo-icon" src="img/header-icons/logo-header-mobile.svg" width="191" height="38" alt="Логотип CAT ENERGY">
+            <img class="page-header__logo-icon" src="img/header-icons/logo-header-mobile.svg" width="191" height="38"
+              alt="Логотип CAT ENERGY">
           </picture>
         </a>
         <nav class="header-navigation header-navigation--closed header-navigation--nojs">
-          <button class="header-navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="header-navigation__toggle-box">
+            <button class="header-navigation__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
           <ul class="header-navigation__list">
             <li class="header-navigation__item header-navigation__item--current header-navigation__item--color">
               <a class="header-navigation__link header-navigation__link--color" href="index.html">Главная</a>
