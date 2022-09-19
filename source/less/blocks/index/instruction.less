@@ -1,12 +1,27 @@
 .instruction {
   margin: 0 20px 49px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0 30px 47px;
+
+    &::after {
+      position: absolute;
+      height: 1px;
+      background-color: @lightest-black;
+      content: "";
+      width: 1000%;
+      left: 0;
+      bottom: -47px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 69px;
+    margin: 0 60px 69px;
   }
 }
 
@@ -61,7 +76,7 @@
 
 .instruction__item {
   margin-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   position: relative;
   font-size: 14px;
   line-height: 18px;
@@ -69,9 +84,7 @@
   color: @dark-grey;
 
   br {
-    display: none;
-
-    @media (min-width: @tablet-width) {
+    @media (max-width: @mobile-width-only) {
       display: block;
     }
   }

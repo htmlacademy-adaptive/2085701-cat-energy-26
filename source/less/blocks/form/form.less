@@ -2,18 +2,19 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 69px 80px;
+    gap: 65px 80px;
   }
 
   .form__item {
     margin: 0;
-    padding: 25px 0 23px;
+    padding: 0;
+    margin-bottom: 23px;
     border: none;
     position: relative;
 
     &:last-of-type {
       padding-bottom: 0;
-      margin-bottom: 34px;
+      margin-bottom: 38px;
 
       @media (min-width: @tablet-width) {
         margin-bottom: 0;
@@ -22,10 +23,20 @@
 
     &--border {
       @media (max-width: @mobile-width-only) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: -28px;
+          left: -20px;
+          width: 1000%;
+          height: 1px;
+          background-color: @programs-grey;
+        }
+
         &::after {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: -24px;
           left: -20px;
           width: 1000%;
           height: 1px;
@@ -34,9 +45,15 @@
       }
     }
 
+    &--height {
+      @media (max-width: @mobile-width-only) {
+        margin-bottom: 53px;
+      }
+    }
+
     @media (min-width: @tablet-width) {
       padding: 0;
-      margin-bottom: 72px;
+      margin-bottom: 68px;
     }
 
     @media (min-width: @desktop-width) {
@@ -53,7 +70,8 @@
 .form__item-container {
   @media (min-width: @desktop-width) {
     display: flex;
-    gap: 69px 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -61,12 +79,13 @@
   margin: 0;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   position: relative;
   display: inline-block;
   background-color: @white;
   padding: 0 18px;
   margin-left: -18px;
+  max-width: 187px;
 
   &::after {
     content: "";
@@ -74,9 +93,17 @@
     height: 2px;
     width: 1000%;
     left: 0;
-    top: 50%;
+    top: 37%;
     background-color: @basic-green;
     z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 63%;
+    }
+  }
+
+  &--height {
+    margin-bottom: 40px;
   }
 
   @media (min-width: @tablet-width) {
@@ -85,6 +112,7 @@
     margin-bottom: 76px;
     padding: 0 40px;
     margin-left: -40px;
+    max-width: none;
 
     &--add {
       margin-bottom: 57px;
@@ -99,19 +127,26 @@
       top: 50%;
       background-color: @basic-green;
       z-index: -1;
+
+      @media (min-width: @tablet-width) {
+        top: 69%;
+      }
     }
   }
 }
 
 .form__item-wrapper {
-  margin-bottom: 14px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
   position: relative;
 
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+
   @media (min-width: @tablet-width) {
-    gap: 20px;
+    gap: 19px;
   }
 }
 
@@ -132,12 +167,15 @@
   margin: 0;
   font: inherit;
   padding: 13px;
+  padding-left: 19px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
   border: 1px solid #e7e7e7;
   position: relative;
+  box-sizing: border-box;
+  appearance: textfield;
 
   &:hover {
     border-color: @special-gray;
@@ -157,20 +195,49 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 436px;
-    box-sizing: border-box;
+    width: auto;
   }
 
   &--width {
     width: 280px;
+    height: 151px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 12px;
+    resize: none;
 
     @media (min-width: @tablet-width) {
       width: 631px;
+      height: 174px;
+      padding-left: 19px;
     }
 
     @media (min-width: @desktop-width) {
       width: 1220px;
     }
+  }
+}
+
+.form__item-input::-webkit-outer-spin-button,
+.form__item-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form__item-input-email {
+  @media (min-width: @desktop-width) {
+    width: 491px;
+    padding-top: 3px;
+    padding-bottom: 14px;
+  }
+}
+
+.form__item-input-phone {
+  @media (min-width: @desktop-width) {
+    width: 471px;
+    padding-top: 3px;
+    padding-bottom: 4px;
   }
 }
 
@@ -193,10 +260,6 @@
     right: 21px;
     fill: none;
     stroke: @darkest-gray;
-
-    @media (min-width: @tablet-width) {
-      top: 20px;
-    }
   }
 
   &--phone {
@@ -276,8 +339,10 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    left: 28px;
-    top: -2px;
+    left: 29px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -290,6 +355,13 @@
   height: 13px;
   border-radius: 50%;
   background-color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
 }
 
 .form__item-radio-button-label-text {
@@ -326,9 +398,9 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 43px 124px;
     width: 565px;
-    margin-bottom: 54px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: @desktop-width) {
@@ -358,6 +430,10 @@
   &:hover .form__item-checkbox-button-label-mark {
     border-color: @special-grey-hover;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 61px;
+  }
 }
 
 .form__item-checkbox-button-label-mark {
@@ -369,7 +445,10 @@
   border: 1px solid @special-gray;
 
   @media (min-width: @tablet-width) {
-    top: -2px;
+    top: -6px;
+    left: 1px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -387,11 +466,19 @@
 .form__item-checkbox-input:checked + .form__item-checkbox-button-label-mark::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 7px;
+  left: 5px;
   width: 26px;
   height: 26px;
   background-image: url("../img/tick.svg");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 8px;
+    background-size: 24px 19px;
+  }
 }
 
 .form__item-checkbox-input {
@@ -418,21 +505,21 @@
     grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 63px;
   }
 }
 
 .form__button {
   margin-bottom: 21px;
-  padding: 7px 44px;
+  padding: 10px 44px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    margin-right: 61px;
+    margin-right: 64px;
     width: 282px;
     font-size: 20px;
-    padding: 13px 45px;
+    padding: 16px 45px;
   }
 
   @media (min-width: @desktop-width) {
