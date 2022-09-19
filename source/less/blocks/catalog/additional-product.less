@@ -25,6 +25,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     grid-column: span 3;
     padding: 0;
     padding-top: 15px;
@@ -43,12 +44,11 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 38px;
-    width: 568px;
+    width: 613px;
     margin-bottom: 0;
   }
 }
@@ -80,6 +80,8 @@
 
   @media (min-width: @desktop-width) {
     margin-left: auto;
+    width: 338px;
+    justify-content: space-between;
   }
 }
 
@@ -87,7 +89,7 @@
   font-family: @addition-font-family;
   line-height: 14px;
   color: @dark-grey;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     margin-left: 50px;
@@ -95,10 +97,14 @@
     line-height: 20px;
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: end;
+  }
 }
 
 .additional-product__button {
-  min-width: 280px;
+  width: 280px;
   text-decoration: none;
   padding: 10px;
 

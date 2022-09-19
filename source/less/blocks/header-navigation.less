@@ -143,6 +143,10 @@
         right: 0;
         height: 2px;
         background-color: @basic-green;
+
+        @media (min-width: @desktop-width) {
+          bottom: 15px;
+        }
       }
     }
   }
@@ -168,6 +172,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
+  cursor: pointer;
 
   &:hover,
   &:focus {

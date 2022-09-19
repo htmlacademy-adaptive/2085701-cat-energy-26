@@ -6,7 +6,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 16px;
       width: 1000%;
       height: 1px;
       left: -20px;
@@ -34,12 +34,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 102px 60px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    gap: 108px 80px;
   }
 }

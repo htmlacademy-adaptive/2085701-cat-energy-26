@@ -1,5 +1,5 @@
 .catalog-additional {
-  padding-top: 25px;
+  padding-top: 11px;
   margin-bottom: 35px;
   position: relative;
 
@@ -18,7 +18,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,11 +34,45 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  padding: 0 22px;
+  margin-left: -22px;
+  position: relative;
+  display: inline-block;
+  background-color: @white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 1000%;
+    left: 0;
+    top: 56%;
+    background-color: @basic-green;
+    z-index: -1;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding: 0 36px;
+    margin-left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 1000%;
+      right: 0;
+      top: 56%;
+      background-color: @basic-green;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 35px 0 40px;
+    margin-left: -40px;
   }
 }
 
