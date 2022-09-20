@@ -140,6 +140,7 @@
   grid-template-columns: auto 1fr;
   gap: 10px;
   position: relative;
+  align-items: center;
 
   &:not(:last-of-type) {
     margin-bottom: 12px;
@@ -147,6 +148,7 @@
 
   @media (min-width: @tablet-width) {
     gap: 19px;
+    margin: 0;
   }
 }
 
@@ -196,6 +198,7 @@
 
   @media (min-width: @desktop-width) {
     width: auto;
+    height: 52px;
   }
 
   &--width {
@@ -228,16 +231,12 @@
 .form__item-input-email {
   @media (min-width: @desktop-width) {
     width: 491px;
-    padding-top: 3px;
-    padding-bottom: 14px;
   }
 }
 
 .form__item-input-phone {
   @media (min-width: @desktop-width) {
     width: 471px;
-    padding-top: 3px;
-    padding-bottom: 4px;
   }
 }
 
@@ -320,10 +319,6 @@
   display: block;
   padding-left: 45px;
 
-  &:hover .form__item-radio-button-label-mark {
-    border-color: @special-grey-hover;
-  }
-
   @media (min-width: @tablet-width) {
     padding-left: 88px;
   }
@@ -374,6 +369,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form__item-radio-input:hover + .form__item-radio-button-label-mark {
+  border-color: @special-grey-hover;
+}
+
+.form__item-radio-input:focus + .form__item-radio-button-label-mark {
+  outline: 2px solid @dark-grey;
 }
 
 .form__item-radio-input {
@@ -427,10 +430,6 @@
   display: block;
   padding-left: 46px;
 
-  &:hover .form__item-checkbox-button-label-mark {
-    border-color: @special-grey-hover;
-  }
-
   @media (min-width: @tablet-width) {
     padding-left: 61px;
   }
@@ -479,6 +478,14 @@
     left: 8px;
     background-size: 24px 19px;
   }
+}
+
+.form__item-checkbox-input:hover + .form__item-checkbox-button-label-mark {
+  border-color: @special-grey-hover;
+}
+
+.form__item-checkbox-input:focus + .form__item-checkbox-button-label-mark {
+  outline: 2px solid @dark-grey;
 }
 
 .form__item-checkbox-input {
